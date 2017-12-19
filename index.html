@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>Currency Converter</title>
   </head>
-  <body>
+  <body class="text-center">
+    <h1>Currency Converter</h1>
     <form name="currency converter">
-      $<input type="text"></input>
-      <input type="button" value="EUR"></input>
-      <input type="button" value="GBP"></input>
-      <input type="button" value="CNY"></input>
-      <input type="button" value="JPY"></input>
+      $<input id="inputCurrency" type="text"></input>
+      <input type="button" class="btn btn-primary" value="EUR"></input>
+      <input type="button" class="btn btn-primary" value="GBP"></input>
+      <input type="button" class="btn btn-primary" value="CNY"></input>
+      <input type="button" class="btn btn-primary" value="JPY"></input>
     </form>
     <span id="output_amount"></span>
     <span id="output_currency"></span>
