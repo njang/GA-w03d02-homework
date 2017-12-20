@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Currency Converter</title>
   </head>
   <body class="text-center">
-    <h1>Currency Converter</h1>
-    <form name="currency converter">
-      USD <input id="inputAmount" type="text" autofocus required></input> to
-      <select id="targetCurrencies"></select>
-      <input id="convert" type="button" class="btn btn-primary" value="Convert"></input>
-    </form>
-    <span id="output"></span>
+    <content>
+      <h2 class="text-uppercase">Currency Converter</h2>
+      <form>
+        <input id="inputAmount" type="number" placeholder="USD" autofocus required></input> to
+        <select id="targetCurrencies"></select>
+        <input id="convert" type="button" class="btn btn-primary btn-sm" value="Convert"></input>
+      </form>
+      <h5 id="output" class="text-large font-weight-bold"></h5>  
+    </content>    
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+body {
+	background: url('https://images.unsplash.com/photo-1509602742943-0bf62bd36166?auto=format&fit=crop&w=1896&q=80');
+	background-repeat:	no-repeat;
+	background-size: cover;
+}
+
+content {
+	position: absolute;
+	top: 40%;
+	bottom: 40%;
+	height: 20%;
+	left: 30%;
+	right: 30%;
+	width: 40%;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 30px;
+	padding: 2em;
+}
+
+form, div {
+	width: 100%;
+	margin: 1em auto;
+}
+/*
+div {
+	background: black;
+	color: white;
+}*/

@@ -25,7 +25,7 @@ function convertCurrency(event) {
     // Convert the value, and keep two digits below decimal point.
     let outputAmount = Math.round(inputAmount * rates[targetCurrency] * 100) / 100;
 	// Display the results and clear the input field.
-	$('#output').html(`${inputAmount} USD is ${outputAmount.toLocaleString()} ${targetCurrency}.`);
+	$('#output').html(`At today's rate, ${Number(inputAmount).toLocaleString()} USD is ${outputAmount.toLocaleString()} ${targetCurrency}.`);
 	$('#inputAmount').val('');
   }
 }
