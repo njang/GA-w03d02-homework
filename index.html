@@ -9,14 +9,11 @@
   <body class="text-center">
     <h1>Currency Converter</h1>
     <form name="currency converter">
-      $<input id="inputCurrency" type="text" autofocus required></input>
-      <input id="symbols" type="button" class="btn btn-primary" value="EUR"></input>
-      <input id="symbols" type="button" class="btn btn-primary" value="GBP"></input>
-      <input id="symbols" type="button" class="btn btn-primary" value="CNY"></input>
-      <input id="symbols" type="button" class="btn btn-primary" value="JPY"></input>
+      USD <input id="inputAmount" type="text" autofocus required></input> to
+      <select id="targetCurrencies"></select>
+      <input id="convert" type="button" class="btn btn-primary" value="Convert"></input>
     </form>
-    <span id="output_amount"></span>
-    <span id="output_currency"></span>
+    <span id="output"></span>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
