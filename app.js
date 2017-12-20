@@ -19,13 +19,15 @@ $.get("https://api.fixer.io/latest?base=USD", function(response){
 function convertCurrency(event) {
   if ('type' in event.target && event.target.type === 'button') {
     // Retrieve target currency from the form, and convert it to string.
-    let targetCurrency = $('#targetCurrency').val().toString();
+    let targetCurrency = $('#targetCurrencies').val().toString();
     // Retrieve input amount from the form.
     let inputAmount = $('#inputAmount').val();
     // Convert the value, and keep two digits below decimal point.
     let outputAmount = Math.round(inputAmount * rates[targetCurrency] * 100) / 100;
-	// Display the results.
+	// Display the results and clear the input field.
 	$('#output').html(`${inputAmount} USD is ${outputAmount.toLocaleString()} ${targetCurrency}.`);
+	$('#inputAmount').val('');
   }
 }
+
 document.body.addEventListener('click', convertCurrency);
